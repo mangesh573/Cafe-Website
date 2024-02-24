@@ -1,0 +1,899 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family : "Open Sans" Arial Helvetica sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+/* header start */
+
+
+.inner img{
+    width: 140px;
+    height: 60px;
+    flex: 1;
+    padding-left: 50px;
+    padding-top: 7px;
+
+}
+header{
+   width: 100%;
+    height: 700px;
+    background-image: url(./img/homepage-hero-bg-img.jpg);
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  height: 75px;
+  line-height: 75px;
+
+}
+nav ul{
+  display: flex; 
+  justify-content: flex-end;
+  flex: 6;
+}
+nav ul li{
+  cursor: pointer;
+  height: 100%;
+  padding: 0 20px;
+  transition: .4s;
+}
+nav ul li:hover{
+  background-color: orange;
+}
+nav ul a{
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+
+}
+
+
+    
+  
+  
+  
+  header h5{
+    position: absolute;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .title{
+    text-align: center;
+    color: white;
+  }
+  .title h3{
+    margin-top: 116px;
+  }
+  .title h1{
+    margin-top: 60px;
+    font-size: 65px
+  }
+  .title p{
+    margin-top: 45px;
+    font-size: 21px;
+    line-height: 27px;
+}
+  
+  @media only screen and (max-width:1007px){
+
+    .inner img{
+     
+      padding-left:0px;
+      padding-top: 7px;
+  
+  }
+   .title h1{
+    font-size:50px ;
+   }
+   .title h3{
+    font-size: 14px;
+  }
+  nav{
+    padding: 0px 10px 0px 25px;
+
+  }
+  nav ul li{
+    padding: 0 11px;
+  }
+  .Reser{
+    display: none;
+  }
+  
+}
+@media only screen and (max-width:640px){
+  .inner img{
+   flex: 0;
+}
+  .title h1{
+    font-size:30px ;
+   }
+   .title h3{
+    font-size: 17px;
+}
+.title p{
+  font-size: 17px;
+
+}
+nav ul{
+  display: grid;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  transform: translateY(-100%);
+  transition: .6s;
+  background-color: black;
+  justify-content: flex-start;
+ 
+}
+nav ul li{
+  border-bottom: 1px solid gray;
+}
+nav .navbar-toggler{
+  display:grid !important;
+  
+}
+input#toggle:checked ~ nav ul{
+  transform: translateY(0%);
+  top: 75px;
+  display: block;
+}
+}
+nav .navbar-toggler{
+  display: none;
+  height: min-content;
+  margin: 18px 1px 0 0;
+  cursor: pointer;
+
+}
+
+nav .navbar-toggler .bar{
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 10%;
+  transition: .4s;
+}
+input{
+  display:none;
+}
+
+  
+    /* main part start */
+
+  #section-1{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 115px 20px 20px 20px;
+   margin-bottom: 50px
+  }
+  #section-1 .left{
+   width: 41%;
+ 
+ 
+  }
+  #section-1 .left img{
+   width: 100%;
+
+
+  }
+  #section-1 .left h1{
+    font-size: 3.5vw;
+  }
+  #section-1 .left p{
+    font-size: 1.5vw;
+    line-height: 36px;
+    margin:15px 0px 65px 0px;
+    color: grey;
+  }
+  #section-1 .left h4{
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  #section-1 .right{
+    width: 41%;
+    
+  }
+  #section-1 .right img{
+    width: 100%;
+  }
+   
+
+  #section-1 .right p{
+    font-size: 1.5vw;
+    line-height: 36px;
+    margin:15px 0px 65px 0px;
+    color: grey;
+  }
+  #section-1 .right h3{
+    color: black;
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  @media only screen and (max-width:1007px){
+    #section-1{
+      display: flex;
+      flex-direction: column;
+      padding: 45px 20px 20px 20px;
+    }
+    #section-1 .left{
+      width: 100%;
+      text-align: center;
+    }
+    #section-1 .left h1{
+      font-size: 6vw;
+    }
+    #section-1 .left p{
+      font-size: 2.5vw;
+      line-height: 30px;
+      
+    }
+    #section-1 .left h4{
+      font-size: 35px;
+      margin-top: 20px;
+    }
+    #section-1 .right{
+      width: 100%;
+      text-align:center;
+    }
+    #section-1 .right h3{
+      color: black;
+      font-size: 35px;
+      margin-top: 20px;
+    }
+    #section-1 .right p{
+      font-size: 2.5vw;
+      line-height: 30px;
+      margin:15px 0px 13px 0px;
+      color: grey;
+    }
+
+  }
+  @media only screen and (max-width:640px){
+    #section-1{
+      padding: 45px 20px 20px 20px;
+    }
+    #section-1 .left h1{
+      font-size: 6vw;
+    }
+    #section-1 .left p{
+      font-size: 2.5vw;
+      line-height: 22px;
+      margin:15px 0px 36px 0px;
+      
+    }
+    #section-1 .left h4{
+      font-size: 30px;
+      margin-top: 20px;
+    }
+    
+    #section-1 .right h3{
+      color: black;
+      font-size: 30px;
+      margin-top: 20px;
+    }
+    #section-1 .right p{
+      font-size: 2.5vw;
+      line-height: 22px;
+      margin:15px 0px 13px 0px;
+      color: grey;
+    }
+  }
+
+  .section-2{
+    position: relative;
+    
+  }
+  .section-2 .sub{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding-top: 115px;
+  }
+  .sub img{
+    
+    position: absolute;
+    width: 520px;
+    left: 60px;
+    top: -260px;
+}
+  
+   .H{
+    width: 100%;
+    text-align: center;
+  }
+  .H h4{
+     font-weight: 600;
+     margin-bottom: 30px;
+  }
+  .H h1{
+     font-size: 50px;
+  }
+  
+  .line::before{
+  content:" ";
+  height: 1px;
+  width: 31%;
+  position: absolute;
+  top: 20%;
+  left:2%;
+  background:grey;
+  }
+  .line::after{
+    content:" ";
+    height: 1px;
+    width:31%;
+    background:gray;
+  
+    position: absolute;
+    top: 20%;
+    right: 2%;
+}
+ .items .left{
+    width: 45%;
+}
+ .left h3{
+ color: white;
+ margin: 20px 0px 20px 0px;
+}
+.items{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.right{
+    width:45% ;
+}
+ .right h3{
+    color: white;
+    margin: 20px 0px 20px 0px;
+   }
+   .items hr{
+    border: 1px dotted grey;
+   }
+   .items p{
+    font-size: 20px;
+    color: grey;
+    margin-bottom: 20px;
+   }
+   
+   
+   .button button:hover{
+    color: black;
+    background-color: orange;
+
+   }
+  .button{
+    text-align: center;
+    padding: 90px 0px;
+  }
+ 
+  .button::before{
+    content: "";
+    position: absolute;
+    width: 40%;
+    top: 89%;
+    left: 2%;
+    height: 1px;
+    background-color:grey;
+
+  }
+  .button::after{
+    content: "";
+    position: absolute;
+    width: 40%;
+    top: 89%;
+    right: 2%;
+    height: 1px;
+    background-color: grey;
+
+  }
+  .button button{
+    background-color:black;
+    color: white;
+    border: 1px solid white; 
+    padding: 10px;
+  }
+   .button button:hover{
+    background-color: orange;
+    color: black;
+    cursor: pointer;
+  }
+  @media only screen and (max-width:1007px){
+    .H h1 {
+      font-size: 45px;
+      line-height: 80px;
+  }
+  .H p{
+    font-size: 14px;
+    line-height: 30px;
+}
+  .line::before{
+  display: none;
+
+  }
+  .line::after{
+   display: none;
+
+  }
+  .button::before{
+    display: none;
+  }
+  .button::after{
+    display: none;
+  }
+    .items{
+    display: flex;
+    flex-direction: column;
+   }
+   .items .left{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;   
+  }
+  .items .right{
+    width: 100%;
+    text-align: center;
+  }
+  .items hr{
+    border: 1px dotted grey;
+    margin: 0px 255px;
+  }
+  .sub img{
+    display: none;
+  }
+}
+@media only screen and (max-width:640px){
+  .H h1 {
+    font-size: 50px;
+    line-height: 80px;
+}
+.H p{
+  font-size: 14px;
+  line-height: 24px;
+}
+}
+
+  
+  .start{
+    background-image: url(./img/signeture-bg.jpg);
+    width: 100%;
+    height:446px;
+    background-size: cover;
+    background-position:0% 97%;
+    color: white; 
+     
+    
+  }
+  .overlay{
+    width: 100%;
+    height: 446px;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .text{
+    padding: 126px 0px 0px 40px;
+  }
+  .text h1{
+    font-size: 60px;
+  }
+  .text p{
+    font-size: 20px;
+    line-height: 27px;
+  }
+  @media only screen and (max-width:640px){
+    .text h1{
+      font-size: 8vw;
+    } 
+    .text h3{
+    font-size: 17px;
+    }
+    .text p{
+      font-size: 15px;
+      line-height: 27px;
+    }
+  }
+
+ .photo{
+  display: flex;
+  flex-direction: column;
+ }
+ 
+ .photos{
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-evenly;
+ }
+ .photos img{
+  width: 28%;
+ }
+ @media only screen and (max-width:1007px){
+  .photos{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+   }
+   .photos img{
+    width: 90%;
+    margin: 20px;
+   }
+   
+ }
+
+ .man-chef{
+  display: flex;
+  justify-content:space-around;
+  margin-top: 220px;
+ }
+ .man-chef-left{
+  width: 45%;
+ }
+ .man-chef-left img{
+  width: 85%;
+ }
+ .man-chef-left h1{
+  font-size: 55px;
+ }
+ .man-chef-right{
+  width: 45%;
+  text-align: center;
+ }
+ .man-chef-left p{
+  font-size: 24px;
+  line-height: 44px;
+  color: grey;
+  margin-bottom: 80px;
+ }
+ .man-chef-right img:nth-child(1){
+  width: 56%;
+  margin-bottom: 95px; 
+ }
+ .man-chef-right img{
+  width: 85%;
+ }
+ @media only screen and (max-width:1007px){
+  .man-chef{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    margin-top: 65px;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+   }
+   .man-chef-left{
+    width:100%;
+   }
+   .man-chef-right{
+    width: 100%;
+   }
+   .man-chef-left img {
+    width: 90%;
+}
+.man-chef-right img:nth-child(1){
+  width: 56%;
+    margin: 30px 0px;
+ }
+ .man-chef-right img{
+  width: 90%;
+ }
+ .man-chef-left h1 {
+  font-size: 7vw;
+}
+.man-chef-left p {
+  font-size: 3vw;
+  line-height: 33px;
+  
+}
+ }
+ .start-1{
+  background-image: url(./img/testimonail-section-bg-1.jpg);
+  width: 100%;
+  height:630px;
+  background-size: cover;
+  background-position:0% 30%;
+  color: white; 
+   
+ }
+  .overlay-1{
+    width: 100%;
+    height: 630px;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .overlay-text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .overlay-text h4{
+    margin: 104px 0px 40px 0px;
+    font-size: 22px;
+    letter-spacing: 3px;
+  }
+  .overlay-text h1{
+    font-size: 60px;
+  }
+  .section-5{
+    margin-top: 130px;
+  }
+  .Reservation{
+    width: 100%;
+    position: relative;
+    margin-bottom: 70px;
+  }
+  .peoples-info{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: -275px;
+    width: 100%;
+  }
+.people{
+  width: 28%;
+  text-align: center;
+  background-color:rgba(0, 0, 0,0.9);
+  color: white;
+  border-radius: 20px;
+  padding: 25px;
+  box-sizing: border-box;
+  position: relative;
+}
+.people-img{
+  
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+.people-img img{
+  border: 7px solid orange;
+  border-radius: 50%;
+  margin-top:-24%;
+}
+
+.people p{
+  margin-top: 20px;
+  line-height: 33px;
+}
+.people h4{
+  margin: 18px;
+}
+.Reser-contact{
+  text-align: center;
+  padding: 190px 0px 0px 0px;
+}
+.Reser-contact h1{
+  font-size: 40px;
+}
+.Reser-contact p{
+  color: grey;
+  font-size: 20px;
+  margin-top: 25px;
+}
+.Reser-contact button{
+  padding: 12px 23px 12px 23px;
+  font-weight: 600;
+  border: 3px solid black;
+  margin-top: 35px;
+  background-color: white;
+  letter-spacing: 2px;
+
+}
+.Reser-contact button:hover{
+  background-color: orange;
+  cursor: pointer;
+  
+}
+.Reser-contact h3{
+  font-size: 11px;
+  margin-top: 65px;
+  margin-bottom: 30px;
+  letter-spacing: 3px;
+}
+
+
+
+.contact-detail{
+  display: flex;
+  background-color: black;
+  color: white;
+  justify-content:space-evenly;
+  margin-top: 100px;
+  padding: 8px 0px 100px 0px;
+  position: relative;
+}
+.pizza{
+  width: 200px;
+    height: 270px;
+  position: absolute;
+  right: 0;
+  top: -280px;
+}
+
+.NYUS{
+  width: 25%;
+}
+.logo{
+  width: 130px;
+  height: 50px;
+}
+.icon{
+  display: flex;
+  align-items: center;
+}
+.icon img{
+ 
+  margin-right: 30px;
+}
+
+
+.a-width{
+  width: 20%;
+}
+.NYUS p{
+  font-size: 18px;
+  line-height: 30px;
+  margin: 10px 0px 30px 0px;
+}
+.our-location p{
+  font-size:17px;
+  line-height: 30px;
+}
+.our-location h1{
+font-size: 30px;
+margin-bottom: 29px;
+}
+.location{
+  display: flex;
+  margin-top: 20px;
+}.location h3{
+  margin-left: 7px;
+  font-size: 13px;
+
+}
+.Quick-link h1{
+  font-size: 30px;
+  
+}
+.Quick-link a{
+  text-decoration: none;
+  color: white;
+  
+}
+.Quick-link ul li{
+  list-style: none;
+  font-size: 17px;
+  line-height: 30px;
+  
+}
+.Quick-link ul{
+  margin-top: 29px;
+}
+.opening-hours h1{
+  font-size:30px ;
+  margin-bottom: 29px;
+
+}
+.clock{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+.clock img{
+  margin-right:10px;
+  background-color: orange;
+  border-radius: 50%;
+  padding: 7px;
+}
+.opening-hours button{
+  padding: 15px 30px 15px 30px;
+  background-color:transparent;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border: 2px solid white;
+}
+.opening-hours button:hover{
+  background-color: orange;
+  color: black;
+}
+@media only screen and (max-width:1007px){
+  .overlay-text{
+    line-height: 3;
+  }
+  
+  .peoples-info{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top:0;
+
+  }
+  .people{
+    width: 70%;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    
+  }
+  .Reser-contact{
+    padding-top: 100px;
+  }
+  .people-img img {
+    
+    margin-top: -12%;
+}
+.pizza{
+  display: none;
+}
+.contact-detail{
+  flex-direction: column;
+  padding: 8px 0px 0px 0px;
+  text-align: center;
+  margin-top: 20px;
+ 
+}
+.NYUS{
+  width: 100%;
+  margin-bottom: 71px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+}
+.a-width{
+  width: 100%;
+  margin-bottom: 71px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+}
+.icon {
+  align-items: baseline;
+  justify-content: center;
+}
+.location {
+  justify-content: center;
+  
+}
+.clock{
+  justify-content: center;
+  align-items: self-start;
+  line-height: 30px;
+}
+.a-width:nth-child(5){
+  border-bottom: 0px;
+}
+}
+@media only screen and (max-width:640px){
+  .people-img img {
+    
+    margin-top: -25%;
+}
+
+}
+footer{
+  width: 100%;
+  background-color: black;
+  color: white;
+  border-top: 2px solid grey;
+}
+
+.footer{
+  padding: 50px 10px 70px 10px;
+  font-size: 14px;
+  border-top: 1px solid orange;
+}
+
+
+
